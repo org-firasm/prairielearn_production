@@ -4,7 +4,8 @@
   "version": "3.2.0",
   "private": true,
   "scripts": {
-    "release": "turbo run build && changeset publish"
+    "release": "turbo run build && changeset publish",
+    "start": "NODE_ENV=production make start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
