@@ -1,1 +1,1 @@
-worker: production make start
+worker: node server.js
