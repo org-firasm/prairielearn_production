@@ -1,0 +1,1 @@
+worker: production make start
