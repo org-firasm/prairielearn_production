@@ -1620,12 +1620,12 @@ module.exports.startServer = async () => {
     const ca = [await fs.promises.readFile(config.sslCAFile)];
     var options = { key, cert, ca };
     server = https.createServer(options, app);
-    server.listen(config.serverPort);
+    server.listen(process.env.PORT || config.serverPort);
     server.timeout = 600000; // 10 minutes
     logger.verbose('server listening to HTTPS on port ' + config.serverPort);
   } else if (config.serverType === 'http') {
     server = http.createServer(app);
-    server.listen(config.serverPort);
+    server.listen(process.env.PORT || config.serverPort);
     server.timeout = 600000; // 10 minutes
     logger.verbose('server listening to HTTP on port ' + config.serverPort);
   } else {

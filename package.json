@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "release": "turbo run build && changeset publish",
-    "start": "NODE_ENV=production make start"
+    "start": "NODE_ENV=production make start",
+    "heroku-postbuild": "NODE_ENV=production make start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
