@@ -50,7 +50,7 @@
     "dockerode": "^3.3.1",
     "dropzone": "^5.9.3",
     "ejs": "^3.1.6",
-    "execa": "^5.1.1",
+    "execa": "^7.1.1",
     "express": "^4.17.3",
     "express-async-handler": "^1.2.0",
     "fabric": "^4.6.0",
